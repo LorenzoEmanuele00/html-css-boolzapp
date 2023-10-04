@@ -18,6 +18,23 @@ img {
 /* COMMON */
 .flex {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.list-scroll {
+    overflow-y: scroll;
+}
+
+.container {
+    height: 80px;
+    padding: 10px;
+}
+
+.profile-pic {
+    height: 60px;
+    width: 60px;
+    /* debug */
+    background-color: black;
 }
 
 
@@ -34,23 +51,127 @@ img {
     display: none;
 }
 
+/* USER */
+.user {
+    background-color: grey;
+}
+
+.profile-nav {
+    display: none;
+    width: calc(100% - 60px);
+    height: 100%;
+    /* debug */
+    background-color: blueviolet;
+}
+
+/* NOTIFICATION */
+.notification {
+    display: none;
+}
+
+.container-big {
+    height: 90px;
+    padding: 10px;
+}
+
+.silence-pic {
+    height: 70px;
+    width: 70px;
+    margin: auto;
+    /* debug */
+    background-color: black;
+}
+
+.news-container {
+    width: calc(100% - 70px);
+    height: 100%;
+    /* debug */
+    background-color: blueviolet;
+}
+
+/* SEARCH */
+.search {
+    display: none;
+}
+
+.container-small {
+    height: 70px;
+    padding: 10px;
+}
+
+.search-icon {
+    height: 50px;
+    width: 50px;
+    /* debug */
+    background-color: black;
+}
+
+.searcher {
+    width: calc(100% - 50px);
+    height: 100%;
+    padding: 10px;
+    /* debug */
+    background-color: blueviolet;
+}
+
+/* CONTACT LIST */
+.contact-list {
+    height: calc(100vh - 80px);
+}
+
+.pic-li {
+    list-style-type: none;
+}
+
+.info-contact {
+    display: none;
+    width: calc(100% - 60px);
+    height: 100%;
+    /* debug */
+    background-color: blueviolet;
+}
+
+/* MEDIA QUERY LEFT SECTION (LAPTOP) */
+@media screen and (min-width: 768px) {
+    .container-left {
+        width: 80px;
+        display: block;
+    }
+}
+
+/* MEDIA QUERY LEFT SECTION (DESKTOP) */
+@media screen and (min-width: 992px) {
+    .container-left {
+        width: 35%;
+    }
+
+    .profile-nav {
+        display: flex;
+    }
+
+    .notification {
+        display: flex;
+    }
+
+    .search {
+        display: flex;
+    }
+
+    .info-contact {
+        display: flex;
+    }
+
+    .contact-list {
+        height: calc(100vh - 240px);
+    }
+}
+
+
 
 /* RIGHT SECTION */
 .container-right {
     height: 100vh;
     width: 100%;
-}
-
-.container {
-    height: 80px;
-    padding: 10px;
-}
-
-.profile-pic {
-    height: 60px;
-    width: 60px;
-    /* debug */
-    background-color: black;
 }
 
 .info-texting-contact {
@@ -63,8 +184,7 @@ img {
 
 .container-chat {
     background-image: url(../img/mine.jpg);
-    height: calc(100% - 160px);
-    overflow-y: scroll;
+    height: calc(100vh - 160px);
 }
 
 .write {
@@ -78,7 +198,7 @@ img {
 /* MEDIA QUERY SECTION RIGHT (TABLET) */
 @media screen and (min-width: 768px) {
     .container-right {
-        width: 85%;
+        width: calc(100% - 80px);
     }
 
     .info-texting-contact {
@@ -101,5 +221,11 @@ img {
         margin: auto;
         /* debug */
         background-color: blue;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container-right {
+        width: 65%;
     }
 }
