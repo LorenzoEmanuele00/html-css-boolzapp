@@ -15,14 +15,91 @@ img {
     width: 100%;
 }
 
+/* COMMON */
+.flex {
+    display: flex;
+}
+
 
 /* WEB APP VIEWPORT */
 .wrapper {
+    display: flex;
     width: 100%;
     height: 100vh;
 }
 
+
 /* LEFT SECTION */
+.container-left {
+    display: none;
+}
 
 
 /* RIGHT SECTION */
+.container-right {
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    height: 80px;
+    padding: 10px;
+}
+
+.profile-pic {
+    height: 60px;
+    width: 60px;
+    /* debug */
+    background-color: black;
+}
+
+.info-texting-contact {
+    height: 60px;
+    width: calc(100% - 60px);
+    padding: 5px;
+    /* debug */
+    background-color: brown;
+}
+
+.container-chat {
+    background-image: url(../img/mine.jpg);
+    height: calc(100% - 160px);
+    overflow-y: scroll;
+}
+
+.write {
+    height: 50px;
+    width: 90%;
+    margin: auto;
+    /* debug */
+    background-color: brown;
+}
+
+/* MEDIA QUERY SECTION RIGHT (TABLET) */
+@media screen and (min-width: 768px) {
+    .container-right {
+        width: 85%;
+    }
+
+    .info-texting-contact {
+        width: calc(100% - 180px);
+    }
+
+    .contact-nav {
+        width: 120px;
+        /* debug */
+        background-color: aqua;
+    }
+
+    .write {
+        width: calc(100% - 120px);
+    }
+
+    .write-tool {
+        height: 50px;
+        width: 60px;
+        margin: auto;
+        /* debug */
+        background-color: blue;
+    }
+}
