@@ -1,6 +1,13 @@
+/* VAR */
 :root {
-    --my-message:green;
-    --l-grey:lightgrey:
+    --my-message:#d5f9ba;
+    --l-grey:#eaeaea;
+    --b-write:#f3eeea;
+    --b-noti:#8edafc;
+    --icon:#b1b1b1;
+    --text:#cfcdd8;
+    --desk-bcol-up:#009688;
+    --desk-bcol-down:#dcdbd2;
 }
 
 
@@ -9,11 +16,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 img {
     width: 100%;
 }
+
 
 /* COMMON */
 .flex {
@@ -37,12 +46,40 @@ img {
     background-color: black;
 }
 
+li {
+    list-style-type: none;
+}
+
 
 /* WEB APP VIEWPORT */
 .wrapper {
     display: flex;
     width: 100%;
     height: 100vh;
+}
+
+@media screen and (min-width: 991px) {
+    .up-wrapper {
+        background: linear-gradient(
+            var(--desk-bcol-up) 0%,
+            var(--desk-bcol-up) 20%,
+            var(--desk-bcol-down) 20%
+        );
+        height: 100vh;
+        width: 100%;
+    }
+
+    .flex-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrapper {
+        width: 90%;
+        height: 90vh;
+        background-color: white;
+    }
 }
 
 
@@ -119,9 +156,7 @@ img {
     height: calc(100vh - 80px);
 }
 
-.pic-li {
-    list-style-type: none;
-}
+
 
 .info-contact {
     display: none;
@@ -132,7 +167,7 @@ img {
 }
 
 /* MEDIA QUERY LEFT SECTION (LAPTOP) */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 540px) {
     .container-left {
         width: 80px;
         display: block;
@@ -140,7 +175,7 @@ img {
 }
 
 /* MEDIA QUERY LEFT SECTION (DESKTOP) */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 991px) {
     .container-left {
         width: 35%;
     }
@@ -162,7 +197,7 @@ img {
     }
 
     .contact-list {
-        height: calc(100vh - 240px);
+        height: calc(90vh - 240px);
     }
 }
 
@@ -174,6 +209,7 @@ img {
     width: 100%;
 }
 
+/* HEADER */
 .info-texting-contact {
     height: 60px;
     width: calc(100% - 60px);
@@ -182,21 +218,58 @@ img {
     background-color: brown;
 }
 
+/* MAIN */
 .container-chat {
     background-image: url(../img/mine.jpg);
     height: calc(100vh - 160px);
+}
+
+.message-space {
+    padding: 20px;
+}
+
+.container-message {
+    border-radius: 10px;
+    max-width: 80%;
+    padding: 20px 20px 10px 20px;
+}
+
+/* GREEN / WHITE */
+.my-message {
+    background-color: var(--my-message);
+    margin-left: auto;
+}
+
+.response {
+    background-color: white;
+}
+
+.content-message {
+    max-width: calc(100% - 20px);
+}
+
+.message-menu { 
+    width: 20px;
+    color: var(--icon);
+}
+
+.hour {
+    margin-left: auto;
+    color: var(--icon);
+}
+
+.footer-color{
+    background-color: var(--b-write);
 }
 
 .write {
     height: 50px;
     width: 90%;
     margin: auto;
-    /* debug */
-    background-color: brown;
 }
 
 /* MEDIA QUERY SECTION RIGHT (TABLET) */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 540px) {
     .container-right {
         width: calc(100% - 80px);
     }
@@ -224,8 +297,13 @@ img {
     }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 991px) {
     .container-right {
         width: 65%;
+        height: 90vh;
+    }
+
+    .container-chat {
+        height: calc(90vh - 160px);
     }
 }
