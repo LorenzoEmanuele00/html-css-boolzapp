@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <title>Document</title>
+    <title>Boolzap</title>
 </head>
 
 <body>
@@ -17,11 +17,15 @@
             <!-- SECTION LEFT -->
             <section class="container-left">
                 <!-- LEFT HEADER -->
-                <header>
+                <header class="left">
                     <!-- USER -->
                     <div class="user container flex">
-                        <div class="profile-pic"></div>
-                        <div class="profile-nav"> <!-- when visible is flex --> </div>
+                        <div class="profile-pic"><img src="img/avatar_io.jpg" alt=""></div>
+                        <div class="profile-nav">
+                            <i class="fa-solid fa-circle-notch"></i>
+                            <i class="fa-solid fa-message"></i>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
                     </div>
                     <!-- /USER -->
                 </header>
@@ -31,15 +35,18 @@
                 <main>
                     <!-- NOTIFICATION -->
                     <div class="notification container-big">
-                        <div class="silence-pic"></div>
-                        <div class="news-container"></div>
+                        <div class="silence-pic flex"><i class="fa-solid fa-bell-slash"></i></div>
+                        <div class="news-container">
+                            <h3>Ricevi notifiche dei nuovi messaggi</h3>
+                            <a href="">Attiva notifiche desktp</a>
+                        </div>
                     </div>
                     <!-- /NOTIFICATION -->
 
                     <!-- SEARCH -->
                     <div class="search container-small">
-                        <div class="search-icon"></div>
-                        <div class="searcher"></div>
+                        <div class="search-icon flex"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <input class="searcher" type="textbox">
                     </div>
                     <!-- /SEARCH -->
 
@@ -47,50 +54,135 @@
                     <div class="contact-list list-scroll">
                         <ul>
                             <li class="flex container">
-                                <div class="profile-pic"></div>
-                                <div class="info-contact"> <!-- when visible is flex --> </div>
+                                <div class="profile-pic"><img src="img/avatar_1.jpg" alt=""></div>
+                                <div class="info-contact">
+                                    <div class="info-text">
+                                        <p class="name">Michele</p>
+                                        <p class="short-message">Lorem ipsum dolor</p>
+                                    </div>
+                                    <div class="info-hour">13:20</div>
+                                </div>
                             </li>
                             <li class="flex container">
-                                <div class="profile-pic"></div>
-                                <div class="info-contact"> <!-- when visible is flex --> </div>
+                                <div class="profile-pic"><img src="img/avatar_2.jpg" alt=""></div>
+                                <div class="info-contact">
+                                    <div class="info-text">
+                                        <p class="name">Fabio</p>
+                                        <p class="short-message">Lorem ipsum dolor</p>
+                                    </div>
+                                    <div class="info-hour">1:57</div>
+                                </div>
                             </li>
                             <li class="flex container">
-                                <div class="profile-pic"></div>
-                                <div class="info-contact"> <!-- when visible is flex --> </div>
+                                <div class="profile-pic"><img src="img/avatar_3.jpg" alt=""></div>
+                                <div class="info-contact">
+                                    <div class="info-text">
+                                        <p class="name">Samuele</p>
+                                        <p class="short-message">Lorem ipsum dolor</p>
+                                    </div>
+                                    <div class="info-hour">16:27</div>
+                                </div>
                             </li>
                             <li class="flex container">
-                                <div class="profile-pic"></div>
-                                <div class="info-contact"> <!-- when visible is flex --> </div>
+                                <div class="profile-pic"><img src="img/avatar_4.jpg" alt=""></div>
+                                <div class="info-contact">
+                                    <div class="info-text">
+                                        <p class="name">Alessandro B.</p>
+                                        <p class="short-message">Lorem ipsum dolor</p>
+                                    </div>
+                                    <div class="info-hour">13:20</div>
+                                </div>
                             </li>
                             <li class="flex container">
-                                <div class="profile-pic"></div>
-                                <div class="info-contact"> <!-- when visible is flex --> </div>
+                                <div class="profile-pic"><img src="img/avatar_5.jpg" alt=""></div>
+                                <div class="info-contact">
+                                    <div class="info-text">
+                                        <p class="name">Alessandro L.</p>
+                                        <p class="short-message">Lorem ipsum dolor</p>
+                                    </div>
+                                    <div class="info-hour">13:20</div>
+                                </div>
                             </li>
                             <li class="flex container">
-                                <div class="profile-pic"></div>
-                                <div class="info-contact"> <!-- when visible is flex --> </div>
+                                <div class="profile-pic"><img src="img/avatar_6.jpg" alt=""></div>
+                                <div class="info-contact">
+                                    <div class="info-text">
+                                        <p class="name">Claudia</p>
+                                        <p class="short-message">Lorem ipsum dolor</p>
+                                    </div>
+                                    <div class="info-hour">13:20</div>
+                                </div>
                             </li>
                             <li class="flex container">
-                                <div class="profile-pic"></div>
-                                <div class="info-contact"> <!-- when visible is flex --> </div>
+                                <div class="profile-pic"><img src="img/avatar_7.jpg" alt=""></div>
+                                <div class="info-contact">
+                                    <div class="info-text">
+                                        <p class="name">Federico</p>
+                                        <p class="short-message">Lorem ipsum dolor</p>
+                                    </div>
+                                    <div class="info-hour">13:20</div>
+                                </div>
                             </li>
                             <li class="flex container">
-                                <div class="profile-pic"></div>
-                                <div class="info-contact"> <!-- when visible is flex --> </div>
+                                <div class="profile-pic"><img src="img/avatar_8.jpg" alt=""></div>
+                                <div class="info-contact">
+                                    <div class="info-text">
+                                        <p class="name">Michele</p>
+                                        <p class="short-message">Lorem ipsum dolor</p>
+                                    </div>
+                                    <div class="info-hour">13:20</div>
+                                </div>
                             </li>
                             <li class="flex container">
-                                <div class="profile-pic"></div>
-                                <div class="info-contact"> <!-- when visible is flex --> </div>
+                                <div class="profile-pic"><img src="img/avatar_1.jpg" alt=""></div>
+                                <div class="info-contact">
+                                    <div class="info-text">
+                                        <p class="name">Michele</p>
+                                        <p class="short-message">Lorem ipsum dolor</p>
+                                    </div>
+                                    <div class="info-hour">13:20</div>
+                                </div>
                             </li>
                             <li class="flex container">
-                                <div class="profile-pic"></div>
-                                <div class="info-contact"> <!-- when visible is flex --> </div>
+                                <div class="profile-pic"><img src="img/avatar_2.jpg" alt=""></div>
+                                <div class="info-contact">
+                                    <div class="info-text">
+                                        <p class="name">Michele</p>
+                                        <p class="short-message">Lorem ipsum dolor</p>
+                                    </div>
+                                    <div class="info-hour">13:20</div>
+                                </div>
                             </li>
                             <li class="flex container">
-                                <div class="profile-pic"></div>
-                                <div class="info-contact"> <!-- when visible is flex --> </div>
+                                <div class="profile-pic"><img src="img/avatar_3.jpg" alt=""></div>
+                                <div class="info-contact">
+                                    <div class="info-text">
+                                        <p class="name">Michele</p>
+                                        <p class="short-message">Lorem ipsum dolor</p>
+                                    </div>
+                                    <div class="info-hour">13:20</div>
+                                </div>
                             </li>
-                            
+                            <li class="flex container">
+                                <div class="profile-pic"><img src="img/avatar_4.jpg" alt=""></div>
+                                <div class="info-contact">
+                                    <div class="info-text">
+                                        <p class="name">Michele</p>
+                                        <p class="short-message">Lorem ipsum dolor</p>
+                                    </div>
+                                    <div class="info-hour">13:20</div>
+                                </div>
+                            </li>
+                            <li class="flex container">
+                                <div class="profile-pic"><img src="img/avatar_5.jpg" alt=""></div>
+                                <div class="info-contact">
+                                    <div class="info-text">
+                                        <p class="name">Michele</p>
+                                        <p class="short-message">Lorem ipsum dolor</p>
+                                    </div>
+                                    <div class="info-hour">13:20</div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                     <!-- /CONTACT LIST -->
@@ -104,9 +196,16 @@
             <section class="container-right">
                 <!-- RIGHT HEADER -->
                 <header class="container flex">
-                    <div class="profile-pic"></div>
-                    <div class="info-texting-contact"></div>
-                    <div class="contact-nav"></div>
+                    <div class="profile-pic"><img src="img/avatar_1.jpg" alt=""></div>
+                    <div class="info-texting-contact">
+                        <p class="texting-contact-name">Michele</p>
+                        <p class="last-access">Ultimo accesso oggi alle 13:20</p>
+                    </div>
+                    <div class="contact-nav">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-paperclip"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
                 </header>
                 <!-- /RIGHT HEADER -->
 
