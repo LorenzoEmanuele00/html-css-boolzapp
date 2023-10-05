@@ -245,6 +245,7 @@ li {
 .info-hour { 
     width: 50px;
     padding-top: 5px;
+    color: var(--icon);
 }
 
 /* MEDIA QUERY LEFT SECTION (LAPTOP) */
@@ -464,5 +465,62 @@ li {
 
     .container-chat {
         height: calc(90vh - 160px);
+    }
+}
+
+
+@media (prefers-color-scheme: dark) {
+    .up-wrapper {
+        background: linear-gradient(
+            #313e33 0%,
+            #313e33 20%,
+            #7b7b7b 20%
+        );
+    }
+
+    .container {
+        background-color: #000000;
+    }
+
+    .contact-list .container {
+        border-color: #474747;
+    }
+
+    .name {
+        color: white;
+    }
+
+    .container-small {
+        background-color: #000000;
+    }
+
+    .search-icon,
+    .searcher {
+        background-color: #b4b4b4;
+    }
+
+    .search-icon a {
+        color: #000000;
+    }
+
+    .container-big {
+        background-color: #416778;
+        color: white;
+    }
+
+    .container-big a {
+        color: #bebebe;
+    }
+
+    .container-right .container {
+        background-color: #000000;
+    }
+
+    .texting-contact-name {
+        color: white;
+    }
+
+    .write {
+        background-color: #b4b4b4;
     }
 }
