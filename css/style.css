@@ -225,22 +225,25 @@ li {
 }
 
 .message-space {
-    padding: 20px;
+    padding: 30px;
 }
 
 .container-message {
+    display: inline-block;
     border-radius: 10px;
     max-width: 80%;
     padding: 20px 20px 10px 20px;
 }
 
-/* GREEN / WHITE */
 .my-message {
-    background-color: var(--my-message);
-    margin-left: auto;
+    text-align: right;
 }
 
-.response {
+.my-message > div {
+    background-color: var(--my-message);
+}
+
+.response > div {
     background-color: white;
 }
 
@@ -248,13 +251,54 @@ li {
     max-width: calc(100% - 20px);
 }
 
+.content-message p {
+    text-align: left;
+}
+
+/* MENU */
 .message-menu { 
+    position: relative;
+    display: inline-block;
     width: 20px;
+}
+
+.message-menu i {
     color: var(--icon);
 }
 
+.message-menu:hover .menu {
+    display: block;
+}
+
+.menu{
+    display: none;
+    position: absolute;
+    left: -50px;
+    width: 110px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 2px #000000;
+    box-shadow: 0 0 2px #000000;
+
+
+}
+
+.menu div {
+    font-size: .7rem;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.canc:hover {
+    opacity: .4;
+}
+
+.info:hover {
+    opacity: .4;
+}
+
 .hour {
-    margin-left: auto;
+    max-width: 100%;
+    text-align: right;
     color: var(--icon);
 }
 
