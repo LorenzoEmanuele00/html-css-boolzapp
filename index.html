@@ -22,9 +22,9 @@
                     <div class="user container flex">
                         <div class="profile-pic"><img src="img/avatar_io.jpg" alt=""></div>
                         <div class="profile-nav">
-                            <a href="" class="fa-solid fa-circle-notch"></a>
-                            <a href="" class="fa-solid fa-message"></a>
-                            <a href="" class="fa-solid fa-ellipsis-vertical"></a>
+                            <button class="fa-solid fa-circle-notch"></button>
+                            <button class="fa-solid fa-message"></button>
+                            <button class="fa-solid fa-ellipsis-vertical"></button>
                         </div>
                     </div>
                     <!-- /USER -->
@@ -35,7 +35,7 @@
                 <main>
                     <!-- NOTIFICATION -->
                     <div class="notification container-big">
-                        <div class="silence-pic flex"><a href="" class="fa-solid fa-bell-slash"></a></div>
+                        <div class="silence-pic flex"><i class="fa-solid fa-bell-slash"></i></div>
                         <div class="news-container">
                             <h3>Ricevi notifiche dei nuovi messaggi</h3>
                             <a href="">Attiva notifiche desktp</a>
@@ -46,7 +46,8 @@
                     <!-- SEARCH -->
                     <div class="search container-small">
                         <div class="search-icon flex"><a href="" class="fa-solid fa-magnifying-glass"></a></div>
-                        <input class="searcher" type="textbox" placeholder="Cerca o inizia una nuova chat">
+                        <label for="search-box">Cerca o inizia una nuova chat</label>
+                        <input id="search-box" class="searcher" type="text" placeholder="Cerca o inizia una nuova chat">
                     </div>
                     <!-- /SEARCH -->
 
@@ -202,9 +203,9 @@
                         <p class="last-access">Ultimo accesso oggi alle 13:20</p>
                     </div>
                     <div class="contact-nav">
-                        <a href="" class="fa-solid fa-magnifying-glass"></a>
-                        <a href="" class="fa-solid fa-paperclip"></a>
-                        <a href="" class="fa-solid fa-ellipsis-vertical"></a>
+                        <button class="fa-solid fa-magnifying-glass"></button>
+                        <button class="fa-solid fa-paperclip"></button>
+                        <button class="fa-solid fa-ellipsis-vertical"></button>
                     </div>
                 </header>
                 <!-- /RIGHT HEADER -->
@@ -286,9 +287,9 @@
 
                 <!-- RIGHT FOOTER -->
                 <footer class="container footer-color flex">
-                    <div class="write-tool"><a href="" class="fa-regular fa-face-smile"></a></div>
-                    <input class="write" type="textbox" placeholder="Scrivi un messagio">
-                    <div class="write-tool vocal"><a href="" class="fa-solid fa-microphone"></a></div>
+                    <div class="write-tool"><button href="" class="fa-regular fa-face-smile"></button></div>
+                    <input class="write" type="text" placeholder="Scrivi un messagio">
+                    <div class="write-tool vocal"><div class="inner-circle"><button href="" class="fa-solid fa-microphone"></button></div></div>
                 </footer>
                 <!-- /RIGHT FOOTER -->
             </section>

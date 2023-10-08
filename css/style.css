@@ -30,17 +30,17 @@ img {
 .list-scroll::-webkit-scrollbar {
     width: 3px;
 }
-  
+
 .list-scroll::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #f1f1f1;
 }
-    
+ 
 .list-scroll::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: #888;
 }
 
 .list-scroll::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #555;
 }
 
 
@@ -143,12 +143,19 @@ li {
     height: 100%;
 }
 
-.profile-nav a {
+.profile-nav button {
     scale: 1.7;
-    padding: 0 20px;
+    padding: 3px;
     color: var(--icon);
     text-decoration: none;
+    margin: 15px;
+    border: transparent;
 }
+
+.profile-nav button:active {
+    opacity: .5;
+}
+
 
 /* NOTIFICATION */
 .notification {
@@ -170,7 +177,7 @@ li {
     border-radius: 50%;
 }
 
-.silence-pic a {
+.silence-pic i {
     scale: 2;
     text-decoration: none;
     color: var(--b-noti);
@@ -214,6 +221,10 @@ li {
     color: var(--icon);
 }
 
+.search label {
+    display: none;
+}
+
 .searcher {
     width: calc(100% - 40px);
     height: 100%;
@@ -224,6 +235,10 @@ li {
 /* CONTACT LIST */
 .contact-list {
     height: calc(100vh - 80px);
+}
+
+.contact-list li:hover {
+    background-color: #eaeaeaca;
 }
 
 .info-contact {
@@ -314,10 +329,17 @@ li {
     padding-right: 20px;
 }
 
-.contact-nav a {
+.contact-nav button {
     color: var(--icon);
     text-decoration: none;
     scale: 1.7;
+    text-decoration: none;
+    margin: 15px;
+    border: transparent;
+}
+
+.contact-nav button:active {
+    opacity: .5;
 }
 
 /* MAIN */
@@ -421,16 +443,58 @@ li {
 .write-tool {
     display: none;
     height: 50px;
-    width: 60px;
+    width: 50px;
     margin: auto;
     justify-content: center;
     align-items: center;
 }
 
-.write-tool a {
-    scale: 1.7;
+.write-tool button {
+    scale: 2;
     color: var(--icon);
     text-decoration: none;
+    border: transparent;
+    border-radius: 50%;
+}
+
+.inner-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* VOCAL BUTTON ANIMATION */
+.vocal button{
+    transition: 1s linear;
+}
+
+.vocal button:active {
+    color: #07628d;
+}
+
+.inner-circle:active {
+    animation: vocal-anim 3s ease-in-out infinite;
+}
+
+@keyframes vocal-anim {
+    0% {
+        width: 30px;
+        aspect-ratio: 1 / 1;
+        border: 3px solid rgb(0, 68, 255);
+        border-radius: 50%;
+    }
+    50% {
+        width: 50px;
+        aspect-ratio: 1 / 1;
+        border: 3px solid rgb(54, 191, 255);
+        border-radius: 50%;
+    }
+    100% {
+        width: 30px;
+        aspect-ratio: 1 / 1;
+        border: 3px solid rgb(0, 68, 255);
+        border-radius: 50%;
+    }
 }
 
 
